@@ -1,0 +1,37 @@
+.ant-switch {
+  margin-top: 20px;
+  width: 30px;
+  height: 16px;
+  background-color: @stormcloud;
+
+  &-checked {
+    background-color: @secondary;
+    .ant-switch-handle {
+      &::before {
+        background-color: @primary;
+      }
+    }
+  }
+
+  &-handle {
+    width: 24px;
+    height: 24px;
+    margin-top: -6px;
+    margin-left: -3px;
+
+    &::before {
+      background-color: @smokie;
+      border-radius: 50%;
+    }
+  }
+
+  &-inner {
+    margin: 0;
+    position: relative;
+    color: black;
+    top: -40px;
+    font-family: Montserrat;
+    font-size: 15px;
+    opacity: 0.13;
+  }
+}
